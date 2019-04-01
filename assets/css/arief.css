@@ -1,0 +1,128 @@
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects
+}
+
+.arief-top {
+  top: 0
+}
+
+.arief-center {
+  text-align: center !important
+}
+
+.arief-tiny {
+  font-size: 10px !important
+}
+
+.arief-small {
+  font-size: 12px !important
+}
+
+.arief-medium {
+  font-size: 15px !important
+}
+
+.arief-large {
+  font-size: 18px !important
+}
+
+.arief-xlarge {
+  font-size: 24px !important
+}
+
+.arief-xxlarge {
+  font-size: 36px !important
+}
+
+.arief-xxxlarge {
+  font-size: 48px !important
+}
+
+.arief-jumbo {
+  font-size: 64px !important
+}
+
+.arief-left-align {
+  text-align: left !important
+}
+
+.arief-right-align {
+  text-align: right !important
+}
+
+.arief-justify {
+  text-align: justify !important
+}
+
+.arief-center {
+  text-align: center !important
+}
+
+.arief-top, .arief-bottom {
+    position: fixed;
+    width: 100%;
+    z-index: 1
+}
+/*NAVIGATION*/
+
+.nav-bar {
+  padding-left: 15%;
+  padding-right: 15%;
+  width: 100%;
+  overflow: auto;
+}
+
+.arief-center .nav-bar {
+  display: inline-block;
+  width: auto
+}
+
+.nav-bar .nav-bar-item {
+  position: relative;
+  padding: 8px 16px;
+  float: left;
+  width: auto;
+  border: none;
+  display: block;
+  outline: 0;
+  text-decoration: none;
+}
+
+/*BUTTON*/
+.nav-bar .arief-button {
+  white-space: normal
+}
+.arief-button {
+  border: none;
+  display: inline-block;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap
+}
+
+.arief-button {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none
+}
+
+/*THEME*/
+.black-on-white {
+  color: #000 !important;
+  background-color: #ffffff !important
+}
+
+.myblue, .hover-myblue:hover {
+  color: #fff !important;
+  background-color: #030361 !important
+}
