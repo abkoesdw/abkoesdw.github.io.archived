@@ -19,19 +19,20 @@
 
     #logo {
         font-family: 'Libre Barcode 39', cursive;
+        display: block !important;
     }
 </style>
 <body>
 
 <div class="w3-top">
     <div class="w3-bar w3-theme-myblack w3-top w3-center w3-large">
-        <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-myblue3 w3-large w3-theme-myblack2" style="padding-top:12pt;" href="javascript:void(0)" onclick="w3_open()"><i class="fas fa-bars"></i></a>
-        <a href="#" class="w3-bar-item w3-button w3-theme-myblack2 w3-hover-myblue3 w3-xlarge" style="padding-top:0pt;">Arief Koesdwiady<div id="logo" style="margin-top: -6pt">Arief Koesdwiady</div></a>
-        <a href="#" style="float:right; padding-top:12pt;" class="w3-bar-item w3-button w3-hide-medium w3-hide-small w3-hover-myblue4">Contact</a>
-        <a href="#" style="float:right; padding-top:12pt;" class="w3-bar-item w3-button w3-hide-medium w3-hide-small w3-hover-myblue4">Projects</a>
-        <a href="#" style="float:right; padding-top:12pt;" class="w3-bar-item w3-button w3-hide-medium w3-hide-small w3-hover-myblue4">Publications</a>
-        <a href="about.html" style="float:right; padding-top:12pt;" class="w3-bar-item w3-button w3-hide-medium w3-hide-small w3-hover-myblue4 w3-myblue2">About</a>
-        <a href="index.html" style="float:right; padding-top:12pt;" class="w3-bar-item w3-button w3-hide-medium w3-hide-small w3-hover-myblue4">Home</a>
+        <a class="w3-bar-item w3-button w3-right hide-logo w3-hover-myblue3 w3-large w3-theme-myblack2" style="padding-top:12pt;" href="javascript:void(0)" onclick="w3_open()"><i class="fas fa-bars"></i></a>
+        <a href="#" class="w3-bar-item w3-button w3-theme-myblack2 w3-hover-myblue3 w3-xlarge" style="padding-top:0;">Arief Koesdwiady<div id="logo" style="display: block; margin-top: -6pt">Arief Koesdwiady</div></a>
+        <a href="#" style="float:right; padding-top:12pt;" class="w3-bar-item w3-button hide-nav w3-hover-myblue4">Contact</a>
+        <a href="#" style="float:right; padding-top:12pt;" class="w3-bar-item w3-button hide-nav w3-hover-myblue4">Projects</a>
+        <a href="#" style="float:right; padding-top:12pt;" class="w3-bar-item w3-button hide-nav w3-hover-myblue4">Publications</a>
+        <a href="about.html" style="float:right; padding-top:12pt;" class="w3-bar-item w3-button hide-nav w3-hover-myblue4 w3-myblue2">About</a>
+        <a href="index.html" style="float:right; padding-top:12pt;" class="w3-bar-item w3-button hide-nav w3-hover-myblue4 ">Home</a>
 
     </div>
 </div>
@@ -46,7 +47,7 @@
     <a class="w3-bar-item w3-button w3-hover-myblue4" href="#">Projects</a>
     <a class="w3-bar-item w3-button w3-hover-myblue4" href="#">Contact</a>
     <p class="w3-small" style="text-align: center; position:absolute; bottom:15%">
-        <strong style="margin-left:15px">Contact</strong><br><br>
+        <!--<strong style="margin-left:15px">Contact</strong><br><br>-->
         <a href="https://www.linkedin.com/in/ariefbarkahkoesdwiady/"><i class="w3-hover-myblue4 fab fa-linkedin fa-2x" style="margin-left:30px;margin-right:15px"></i></a>
         <a href="https://www.facebook.com/abekatech"><i class="w3-hover-myblue4 fab fa-facebook-square fa-2x" style="margin-right:15px"></i></a>
         <a href="https://www.instagram.com/ariefbarkah/"><i class="w3-hover-myblue4 fab fa-instagram fa-2x" style="margin-right:15px"></i></a>
@@ -65,70 +66,104 @@
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 <div class="w3-main">
-    <div class="w3-row w3-justify" style="padding-top: 60pt">
-        <div class="w3-container">
-            <h1 class="w3-text-black">Summary</h1>
-            <p style="font-size: 16px">I'm Arief (arabic: عارف, pronounced [ah-r-ee-f]), an Indonesian living in Canada. I'm a husband and a
-                father of two amazing boys. I am a Senior Artificial Intelligence Specialist at <a target=”_blank” href="https://www.gm.ca/en/home.html" class="w3-myblue3" style="text-decoration: none">General Motors Canada</a>. I received my PhD from the <a target=”_blank” href="https://uwaterloo.ca/" class="w3-myblue3" style="text-decoration: none">University of Waterloo</a>, Canada, for my dissertation on <a target=”_blank” href="https://uwspace.uwaterloo.ca/handle/10012/13168" class="w3-myblue3" style="text-decoration: none">
-                    Large-Scale Time Series
-                    Prediction using Deep Learning</a>. During the course of my PhD,  I worked on vision-based driver behavior recognition
-                using deep learning as a side project, which has been featured in several <a target=”_blank” href="http://www.google.com/search?q=arief+koesdwiady+distracted+driving" class="w3-myblue3" style="text-decoration: none">news outlets</a>, and in 2016, speech recognition systems at a Waterloo-based start-up company.
-                </br>
-                Before this, I completed BEng in Engineering Physics from <a target=”_blank” href="https://www.itb.ac.id/" class="w3-myblue3" style="text-decoration: none">ITB</a> in 2008 and MSc in Control Systems from <a target=”_blank” href="http://www.kfupm.edu.sa/Default.aspx" class="w3-myblue3" style="text-decoration: none">KFUPM</a> in 2013. For more details, visit this <a href="about.html" class="w3-myblue3" style="text-decoration: none">page</a>.
-            </p>
+    <div class="w3-container" style="padding-top: 60pt">
+        <h2 class="my-h2 w3-text-black">Professional Interests</h2>
+        <p>
+            Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto.
+        </p>
+    </div>
+
+    <div class="w3-container w3-center" style="padding-top: 11pt; padding-bottom: 6pt">
+        <div class="line"></div>
+        <div style="display:inline-block;"><i class="fas fa-chevron-down fa-lg w3-myblue3"></i></div>
+        <div class="line"></div>
+    </div>
+
+    <div class="w3-container">
+        <h2 class="my-h2 w3-text-black">Experience</h2>
+        <div class="w3-row w3-padding-16">
+            <div class="w3-col m5 l5">
+                <img class="w3-image" src="assets/img/GM-logo.jpg" alt="GM logo">
+                <h5 class="my-h5" style="text-align: center">Mar 2018 - Now</h5>
+            </div>
+
+            <div class="w3-col m7 l7">
+                <h4 class="my-h4">Senior AI Specialist</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto.
+                </p>
+            </div>
         </div>
-        <div class="w3-container w3-center" style="padding-top: 9pt; padding-bottom: 6pt">
-            <div class="line"></div>
-            <div style="display:inline-block;"><i class="fas fa-chevron-down fa-lg w3-myblue3"></i></div>
-            <div class="line"></div>
-        </div>
-        <div class="w3-container">
-            <h1 class="w3-text-black">Experience</h1>
-            <div class="timeline">
-                <div class="timeline-container timeline-left">
-                    <div class="timeline-content">
-                        <img class="company_logo" src="assets/img/GM-logo.jpg" alt="GM logo" style="width: 90%">
-                        <h4>Senior AI Specialist</h4><h6> Mar 2018 - Now</h6>
-                        <p>Tell people more about the services you offer. Use this repeating layout to display content. It's an easy way to keep your customers up to date with what's happening.</p>
-                    </div>
-                </div>
-                <div class="timeline-container timeline-right">
-                    <div class="timeline-content">
-                        <img class="company_logo" src="assets/img/cognitech-logo.png" alt="cognitech logo" style="width: 70%">
-                        <h5>Machine Learning Engineer</h5><h6> October 2016 - December 2017</h6>
-                        <p>Tell people more about the services you offer. Use this repeating layout to display content. It's an easy way to keep your customers up to date with what's happening.</p>
-                    </div>
-                </div>
-                <div class="timeline-container timeline-left">
-                    <div class="timeline-content">
-                        <img class="company_logo" src="assets/img/UW-logo.jpg" alt="UW logo" style="width: 70%">
-                        <h4>Research and Teaching Assistants</h4><h6> Mar 2018 - Now</h6>
-                        <p>Tell people more about the services you offer. Use this repeating layout to display content. It's an easy way to keep your customers up to date with what's happening.</p>
-                    </div>
-                </div>
-                <div class="timeline-container timeline-right">
-                    <div class="timeline-content">
-                        <h2>2012</h2>
-                        <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-                    </div>
-                </div>
-                <div class="timeline-container timeline-left">
-                    <div class="timeline-content">
-                        <h2>2011</h2>
-                        <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-                    </div>
-                </div>
-                <div class="timeline-container timeline-right">
-                    <div class="timeline-content">
-                        <h2>2007</h2>
-                        <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-                    </div>
-                </div>
+
+        <div class="w3-row w3-padding-16">
+            <div class="w3-col m5 l5">
+                <img class="w3-image" src="assets/img/cognitech-logo.png" alt="cognitech logo" style="width: 60%; margin-left: auto; margin-right: auto; display: block;">
+                <h5 class="my-h5" style="text-align: center">Mar 2018 - Now</h5>
+            </div>
+            <div class="w3-col m7 l7">
+                <h4 class="my-h4">Machine Learning Engineer</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto.
+                </p>
+
             </div>
         </div>
     </div>
 
+
+    <div class="w3-container w3-center" style="padding-top: 11pt; padding-bottom: 6pt">
+        <div class="line"></div>
+        <div style="display:inline-block;"><i class="fas fa-chevron-down fa-lg w3-myblue3"></i></div>
+        <div class="line"></div>
+    </div>
+
+    <div class="w3-container">
+        <h2 class="my-h2 w3-text-black">Education</h2>
+    </div>
+
+    <!--<div class="timeline">-->
+    <!--<div class="timeline-container timeline-left">-->
+    <!--<div class="timeline-content">-->
+    <!--<img class="company_logo" src="assets/img/GM-logo.jpg" alt="GM logo">-->
+    <!--<h4>Senior AI Specialist</h4><h6> Mar 2018 - Now</h6>-->
+    <!--<p>Tell people more about the services you offer. Use this repeating layout to display content. It's an easy way to keep your customers up to date with what's happening.</p>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="timeline-container timeline-right">-->
+    <!--<div class="timeline-content">-->
+    <!--<img class="company_logo" src="assets/img/cognitech-logo.png" alt="cognitech logo">-->
+    <!--<h5>Machine Learning Engineer</h5><h6> October 2016 - December 2017</h6>-->
+    <!--<p>Tell people more about the services you offer. Use this repeating layout to display content. It's an easy way to keep your customers up to date with what's happening.</p>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="timeline-container timeline-left">-->
+    <!--<div class="timeline-content">-->
+    <!--<img class="company_logo" src="assets/img/UW-logo.jpg" alt="UW logo">-->
+    <!--<h4>Research and Teaching Assistants</h4><h6> Mar 2018 - Now</h6>-->
+    <!--<p>Tell people more about the services you offer. Use this repeating layout to display content. It's an easy way to keep your customers up to date with what's happening.</p>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="timeline-container timeline-right">-->
+    <!--<div class="timeline-content">-->
+    <!--<h2>2012</h2>-->
+    <!--<p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="timeline-container timeline-left">-->
+    <!--<div class="timeline-content">-->
+    <!--<h2>2011</h2>-->
+    <!--<p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="timeline-container timeline-right">-->
+    <!--<div class="timeline-content">-->
+    <!--<h2>2007</h2>-->
+    <!--<p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
 </div>
+
 <!--<div class="w3-bottom">-->
 <div class="footer">
     <div class="w3-row w3-theme-myblack">
