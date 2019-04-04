@@ -792,6 +792,11 @@ a {
         text-align: center;
     }
 
+    .my-h6{
+        font-size: 11pt;
+        text-align: center;
+    }
+
 }
 
 @media (min-width: 963px) {
@@ -1419,6 +1424,11 @@ a {
 .w3-myblue, .w3-hover-myblue:hover {
     color: #fff !important;
     background-color: #030361 !important
+}
+
+.w3-myblue5, .w3-hover-myblue5:hover {
+    color: #fff !important;
+    background-color: #2793f1 !important
 }
 
 .w3-myblue2{
