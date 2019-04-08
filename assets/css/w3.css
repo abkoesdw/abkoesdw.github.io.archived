@@ -14,7 +14,8 @@ html {
 }
 
 body {
-    margin: 0
+    margin: 0;
+    padding-bottom:120px;
 }
 
 article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
@@ -845,6 +846,8 @@ a {
     .w3-dropdown-hover.w3-mobile, .w3-dropdown-hover.w3-mobile .w3-btn, .w3-dropdown-hover.w3-mobile .w3-button, .w3-dropdown-click.w3-mobile, .w3-dropdown-click.w3-mobile .w3-btn, .w3-dropdown-click.w3-mobile .w3-button {
         width: 100%
     }
+
+
 }
 
 @media (max-width: 768px) {
@@ -1448,7 +1451,7 @@ a {
 
 .w3-hover-myblue3:hover {
     color: #1e74bf !important;
-    background-color: #333333 !important
+    background-color: #333333 !important;
 }
 
 .w3-hover-myblue4:hover {
@@ -1836,6 +1839,8 @@ a {
     width: 100%;
     color: white;
     text-align: center;
+    display: block;
+    height:120px;
 }
 
 .hero-image {
@@ -1888,7 +1893,9 @@ a {
 
     #banner-container {
         margin-top: 0%;
-
+    }
+    .map-responsive {
+        width: 100%;
     }
 
 }
@@ -1913,6 +1920,10 @@ a {
 
     }
 
+    .map-responsive {
+        width: 80%;
+    }
+
 
 }
 
@@ -1932,6 +1943,10 @@ a {
     #banner-container {
         margin-top: 0%;
 
+    }
+
+    .map-responsive {
+        width: 80%;
     }
 
 
@@ -2093,6 +2108,8 @@ a {
     width: 20vw;
     align: left;
 }
+
+
 /*}*/
 
 /*@media screen and (min-width: 600px) {*/
