@@ -1833,7 +1833,7 @@ a {
 }
 
 .footer {
-    position: relative;
+    position: absolute;
     /*left: 0;*/
     /*bottom: 0;*/
     width: 100%;
@@ -1964,9 +1964,9 @@ a {
 .news-date {
     background-color: #2793f1;
     width: 100px;
-    height: 30px;
     text-align: center;
     padding-top: 5px;
+    display: inline-block;
     color: #ffffff;
 }
 
