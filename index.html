@@ -24,6 +24,7 @@
     #more {
         display: none;
     }
+    .mySlides {display:none}
 </style>
 
 <body>
@@ -81,7 +82,39 @@
         </p>
     </div>
 </div>
+
 <div class="w3-main">
+    <div class="w3-container">
+        <div class="w3-display-container mySlides">
+            <img src="assets/img/at_gm_edited.jpg" style="width:100%">
+            <div class="w3-display-topleft w3-container w3-padding-32">
+                <span class="w3-white w3-padding-large w3-animate-bottom">Lorem ipsum</span>
+            </div>
+        </div>
+        <div class="w3-display-container mySlides">
+            <img src="assets/img/arief_edited.jpg" style="width:100%">
+            <div class="w3-display-middle w3-container w3-padding-32">
+                <span class="w3-white w3-padding-large w3-animate-bottom">Klorim tipsum</span>
+            </div>
+        </div>
+        <div class="w3-display-container mySlides">
+            <img src="assets/img/arief2.jpg" style="width:100%">
+            <div class="w3-display-topright w3-container w3-padding-32">
+                <span class="w3-white w3-padding-large w3-animate-bottom">Blorum pipsum</span>
+            </div>
+        </div>
+        <div class="w3-container w3-dark-grey w3-padding w3-xlarge">
+            <div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i></div>
+            <div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal"></i></div>
+
+            <div class="w3-center">
+                <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+                <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+                <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+            </div>
+        </div>
+    </div>
+
     <div class="w3-row w3-padding-16 w3-justify">
         <div class="w3-container">
             <h1 class="w3-text-black">Hi</h1>
@@ -203,7 +236,7 @@
 
 <!--<div class="w3-bottom">-->
 <div class="w3-container" style="opacity:0">
-  <p>This is my transparent footer</p>
+    <p>This is my transparent footer</p>
 </div>
 <div class="footer">
     <div class="w3-row w3-theme-myblack w3-bottom" style="position: absolute">
