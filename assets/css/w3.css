@@ -1435,12 +1435,12 @@ a {
 }
 
 .w3-myblue2{
-    color: #fff !important;
-    background-color: #2793f1 !important
+    color: #2793f1 !important;
+    background-color: #ffffff !important
 }
 
 .w3-myblue3{
-    color: #2793f1 !important;
+    color: #27aef1 !important;
     background-color: #fff !important
 }
 
@@ -1450,13 +1450,13 @@ a {
 }
 
 .w3-hover-myblue3:hover {
-    color: #1e74bf !important;
+    color: #27aef1 !important;
     background-color: #333333 !important;
 }
 
 .w3-hover-myblue4:hover {
-    color: #2793f1 !important;
-    background-color: #000000 !important
+    color: #073980 !important;
+    background-color: #ffffff !important
 }
 
 .w3-myred, .w3-hover-myred:hover {
@@ -1844,9 +1844,10 @@ a {
 }
 
 .hero-image {
-    background-image: url("at_gm_edited.jpg");
+    background-image: url("../img/bismillah.png");
 
     height: 50%;
+    /*width: 150%;*/
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
