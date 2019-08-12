@@ -1342,6 +1342,10 @@ a {
     margin-bottom: 16px !important
 }
 
+.w3-margin-bottom-small {
+    margin-bottom: 16px !important
+}
+
 .w3-margin-left {
     margin-left: 16px !important
 }
@@ -1845,13 +1849,18 @@ a {
 
 .hero-image {
     background-image: url("../img/bismillah.png");
-
+    background-size: contain;
+    /*padding: 400pt 30pt 10pt 30pt;*/
     height: 50%;
-    /*width: 150%;*/
+    /*width: 50%;*/
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
     position: relative;
+}
+
+.hero-background {
+    width: 100%;
+    height: auto;
 }
 
 .hero-text {
