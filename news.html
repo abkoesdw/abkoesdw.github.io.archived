@@ -1,13 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<title>Arief's Personal Site</title>
+<meta charset="UTF-8">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<link href="assets/img/pi.png" rel="icon">
+<link href="assets/css/w3.css" rel="stylesheet">
+<link href="assets/css/w3-theme-black.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+<link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39" rel="stylesheet">
+<link href="assets/css/jcarousel.responsive.css" rel="stylesheet">
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/jquery.jcarousel.min.js"></script>
+<script type="text/javascript" src="assets/js/jcarousel.responsive.js"></script>
 <style>
-body, html {
-  height: 100%;
-  margin: 0;
-}
+    html, body, h1, h2, h3, h4, h5, h6 {
+        font-family: 'Montserrat', sans-serif;
+    }
 
+    body, html {
+        height: 100%;
+    }
+
+    #logo {
+        font-family: 'Libre Barcode 39', cursive;
+    }
+
+    #more {
+        display: none;
+    }
+
+    .mySlides {
+        display: none
+    }
 .bgimg {
-  background-image: url('./assets/img/forestbridge.jpg');
+  background-image: url('./assets/img/construction.jpg');
   height: 100%;
   background-position: center;
   background-size: cover;
@@ -42,8 +70,63 @@ hr {
   width: 40%;
 }
 </style>
-<body>
 
+<body>
+<div class="w3-top">
+    <div class="w3-bar w3-theme-white w3-top w3-center w3-large" style="height: 50pt">
+        <a class="w3-bar-item w3-button w3-right hide-logo w3-hover-myblue2 w3-large w3-theme-white"
+           href="javascript:void(0)" onclick="w3_open()" style="padding-top:12pt;"><i class="fas fa-bars"></i></a>
+        <a class="w3-bar-item w3-button w3-theme-white w3-hover-myblue22 w3-xlarge" href="index.html"
+           style="padding-top:10pt"><strong>arief</strong> koesdwiady
+            <div id="logo" style="display: block; margin-top: -6pt">arief koesdwiady</div>
+        </a>
+        <a class="w3-bar-item w3-button hide-nav w3-hover-myblue2 w3-myblue2" href="contact.html"
+           style="float:right; padding-top:12pt;">contact</a>
+        <a class="w3-bar-item w3-button hide-nav w3-hover-myblue2" href="projects.html"
+           style="float:right; padding-top:12pt;">projects</a>
+        <a class="w3-bar-item w3-button hide-nav w3-hover-myblue2" href="publications.html"
+           style="float:right; padding-top:12pt;">publications</a>
+        <a class="w3-bar-item w3-button hide-nav w3-hover-myblue2 " href="about.html"
+           style="float:right; padding-top:12pt;">about</a>
+        <a class="w3-bar-item w3-button hide-nav w3-hover-myblue2" href="index.html"
+           style="float:right; padding-top:12pt;">home</a>
+
+    </div>
+</div>
+
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-whiteonblue w3-animate-left" id="mySidebar"
+     style="z-index: 2">
+    <a class="w3-right w3-xlarge w3-padding-large" href="javascript:void(0)" onclick="w3_close()" title="Close Menu">
+        <i class="fas fa-times" style="color: white"></i>
+    </a>
+    <a class="w3-bar-item w3-button w3-hover-myblue2" href="index.html">home</a>
+    <a class="w3-bar-item w3-button w3-hover-myblue2" href="about.html">about</a>
+    <a class="w3-bar-item w3-button w3-hover-myblue2" href="publications.html">publications</a>
+    <a class="w3-bar-item w3-button w3-hover-myblue2" href="projects.html">projects</a>
+    <a class="w3-bar-item w3-button w3-hover-myblue2" href="contact.html">contact</a>
+
+    <p class="w3-small" style="text-align: center">
+        <!--<strong style="margin-left:15px">Contact</strong><br><br>-->
+        <a href="https://www.linkedin.com/in/ariefbarkahkoesdwiady/"><i class="fab fa-linkedin fa-2x"
+                                                                        style="margin-left:30px;margin-right:15px"></i></a>
+        <a href="https://www.facebook.com/abekatech"><i class="fab fa-facebook-square fa-2x"
+                                                        style="margin-right:15px"></i></a>
+        <a href="https://www.instagram.com/ariefbarkah/"><i class="fab fa-instagram fa-2x"
+                                                            style="margin-right:15px"></i></a>
+        <a href="mailto:arief.koesdwiady@gm.com?Subject=From%20the%20website"><i class="fas fa-envelope-square fa-2x"
+                                                                                 style="margin-right:15px"></i></a>
+        <br>
+        <br>
+    </p>
+    <p class="w3-small" style="text-align: center">
+        <img alt="copyright" src="assets/img/copyright.png" style="width: 5%; margin-right:5px;">
+        Copyright 2019 arief<br>
+        <a class="w3-tiny" href="https://www.w3schools.com/w3css/default.asp" style="text-decoration: none"
+           target="_blank">
+            Powered by w3.css</a>
+    </p>
+
+</nav>
 <div class="bgimg">
   <!--<div class="topleft">-->
     <!--<p>Logo</p>-->
@@ -89,15 +172,12 @@ var countdownfunction = setInterval(function() {
 }, 1000);
 </script>
 
-</body>
-</html>
-
 <!--<!DOCTYPE html>-->
 <!--<html lang="en">-->
 <!--<title>Arief's Personal Site</title>-->
 <!--<meta charset="UTF-8">-->
 <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
-<!--<link rel="icon" href="http://example.com/favicon.png">-->
+<!--<link rel="icon" href="assets/img/pi.png">-->
 <!--<link rel="stylesheet" href="assets/css/w3.css">-->
 <!--<link rel="stylesheet" href="assets/css/w3-theme-black.css">-->
 <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed">-->
@@ -114,23 +194,20 @@ var countdownfunction = setInterval(function() {
 
     <!--#logo {-->
         <!--font-family: 'Libre Barcode 39', cursive;-->
-    <!--}-->
-    <!--#more {-->
-        <!--display: none;-->
+        <!--display: block !important;-->
     <!--}-->
 <!--</style>-->
-
 <!--<body>-->
 
 <!--<div class="w3-top">-->
     <!--<div class="w3-bar w3-theme-myblack w3-top w3-center w3-large">-->
         <!--<a class="w3-bar-item w3-button w3-right hide-logo w3-hover-myblue3 w3-large w3-theme-myblack2" style="padding-top:12pt;" href="javascript:void(0)" onclick="w3_open()"><i class="fas fa-bars"></i></a>-->
         <!--<a href="index.html" class="w3-bar-item w3-button w3-theme-myblack2 w3-hover-myblue3 w3-xlarge" style="padding-top:0;">Arief Koesdwiady<div id="logo" style="display: block; margin-top: -6pt">Arief Koesdwiady</div></a>-->
-        <!--<a href="#" style="float:right; padding-top:12pt;" class="w3-bar-item w3-button hide-nav w3-hover-myblue4">Contact</a>-->
-        <!--<a href="projects.html" style="float:right; padding-top:12pt;" class="w3-bar-item w3-button hide-nav w3-hover-myblue4">Projects</a>-->
+        <!--<a href="contact.html" style="float:right; padding-top:12pt;" class="w3-bar-item w3-button hide-nav w3-hover-myblue4">Contact</a>-->
+        <!--<a href="projects.html" style="float:right; padding-top:12pt;" class="w3-bar-item w3-button hide-nav w3-hover-myblue4 w3-myblue2">Projects</a>-->
         <!--<a href="publications.html" style="float:right; padding-top:12pt;" class="w3-bar-item w3-button hide-nav w3-hover-myblue4">Publications</a>-->
-        <!--<a href="about.html" style="float:right; padding-top:12pt;" class="w3-bar-item w3-button hide-nav w3-hover-myblue4 ">About</a>-->
-        <!--<a href="index.html" style="float:right; padding-top:12pt;" class="w3-bar-item w3-button hide-nav w3-hover-myblue4">Home</a>-->
+        <!--<a href="about.html" style="float:right; padding-top:12pt;" class="w3-bar-item w3-button hide-nav w3-hover-myblue4">About</a>-->
+        <!--<a href="index.html" style="float:right; padding-top:12pt;" class="w3-bar-item w3-button hide-nav w3-hover-myblue4 ">Home</a>-->
 
     <!--</div>-->
 <!--</div>-->
@@ -142,8 +219,8 @@ var countdownfunction = setInterval(function() {
     <!--<a class="w3-bar-item w3-button w3-hover-myblue4" href="index.html">Home</a>-->
     <!--<a class="w3-bar-item w3-button w3-hover-myblue4" href="about.html">About</a>-->
     <!--<a class="w3-bar-item w3-button w3-hover-myblue4" href="publications.html">Publications</a>-->
-    <!--<a class="w3-bar-item w3-button w3-hover-myblue4" href="projects.html">Projects</a>-->
-    <!--<a class="w3-bar-item w3-button w3-hover-myblue4" href="#">Contact</a>-->
+    <!--<a class="w3-bar-item w3-button w3-hover-myblue4 w3-myblue2" href="projects.html">Projects</a>-->
+    <!--<a class="w3-bar-item w3-button w3-hover-myblue4" href="contact.html">Contact</a>-->
     <!--<p class="w3-small" style="text-align: center; position:absolute; bottom:15%">-->
         <!--&lt;!&ndash;<strong style="margin-left:15px">Contact</strong><br><br>&ndash;&gt;-->
         <!--<a href="https://www.linkedin.com/in/ariefbarkahkoesdwiady/"><i class="w3-hover-myblue4 fab fa-linkedin fa-2x" style="margin-left:30px;margin-right:15px"></i></a>-->
@@ -163,57 +240,197 @@ var countdownfunction = setInterval(function() {
 
 <!--<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>-->
 
-<!--<div class="w3-main" style="padding-top: 80pt; padding-bottom: 40pt">-->
+<!--<div class="w3-main" style="padding-bottom: 60pt">-->
     <!--<div class="w3-container">-->
-        <!--<h1 class="w3-text-black">News</h1>-->
-        <!--<div class="news-date" style="font-size: 16px"> Jan. 9, 2018-->
-        <!--</div>-->
-        <!--<div class="news-content" style="font-size: 16px"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.-->
-            <!--Ut enim ad minim veniam.-->
-        <!--</div>-->
-        <!--<div class="news-date"> Jan. 9, 2018-->
-        <!--</div>-->
-        <!--<div class="news-content"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.-->
-            <!--Ut enim ad minim veniam.-->
+        <!--<div class="w3-row"  style="padding-top: 70pt">-->
+            <!--<h3 style="padding-left:1%; padding-right:1%">Traffic Flow</h3>-->
+            <!--<div class="w3-col m7 l7" style="padding-left:1%; padding-right:1%">-->
+                <!--<p style="text-align: justify">-->
+                <!--Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto.-->
+                <!--Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto.-->
+                <!--</p>-->
+            <!--</div>-->
+            <!--<div class="w3-col m5 l5 w3-center" style="padding-left:1%; padding-right:1%">-->
+                <!--<img class="w3-image" src="assets/img/kfupm-mit.jpeg" alt="mit-kfupm" style="width: 100%;height: auto">-->
+            <!--</div>-->
         <!--</div>-->
     <!--</div>-->
+    <!--<div class="w3-container w3-center" style="padding-top: 40pt; padding-bottom:20pt">-->
+        <!--<div class="line"></div>-->
+        <!--<div style="display:inline-block;"><i class="fas fa-chevron-down fa-lg w3-myblue3"></i></div>-->
+        <!--<div class="line"></div>-->
+    <!--</div>-->
+    <!--<div class="w3-container">-->
+        <!--<div class="w3-row">-->
+            <!--<h3 style="padding-left:1%; padding-right:1%">Driver Distraction</h3>-->
+            <!--<div class="w3-col m5 l5 w3-center" style="padding-left:1%; padding-right:1%">-->
+                <!--<img class="w3-image" src="assets/img/kfupm-mit.jpeg" alt="mit-kfupm" style="width: 100%;height: auto">-->
+            <!--</div>-->
+            <!--<div class="w3-col m7 l7" style="padding-left:1%; padding-right:1%">-->
+                <!--<p style="text-align: justify">-->
+                <!--Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto.-->
+                <!--Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto.-->
+                <!--</p>-->
+            <!--</div>-->
 
-    <!--&lt;!&ndash; Pagination &ndash;&gt;-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="w3-container w3-center" style="padding-top: 40pt; padding-bottom:20pt">-->
+        <!--<div class="line"></div>-->
+        <!--<div style="display:inline-block;"><i class="fas fa-chevron-down fa-lg w3-myblue3"></i></div>-->
+        <!--<div class="line"></div>-->
+    <!--</div>-->
+    <!--<div class="w3-container">-->
+        <!--<div class="w3-row">-->
+            <!--<h3 style="padding-left:1%; padding-right:1%">Keyword Spotting</h3>-->
+            <!--<div class="w3-col m7 l7" style="padding-left:1%; padding-right:1%">-->
+                <!--<p style="text-align: justify">-->
+                <!--Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto.-->
+                <!--Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto.-->
+                <!--</p>-->
+            <!--</div>-->
+            <!--<div class="w3-col m5 l5 w3-center" style="padding-left:1%; padding-right:1%">-->
+                <!--<img class="w3-image" src="assets/img/kfupm-mit.jpeg" alt="mit-kfupm" style="width: 100%;height: auto">-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="w3-container w3-center" style="padding-top: 40pt; padding-bottom:20pt">-->
+        <!--<div class="line"></div>-->
+        <!--<div style="display:inline-block;"><i class="fas fa-chevron-down fa-lg w3-myblue3"></i></div>-->
+        <!--<div class="line"></div>-->
+    <!--</div>-->
+    <!--<div class="w3-container">-->
+        <!--<div class="w3-row">-->
+            <!--<h3 style="padding-left:1%; padding-right:1%">Anomaly Detection</h3>-->
+            <!--<div class="w3-col m5 l5 w3-center" style="padding-left:1%; padding-right:1%">-->
+                <!--<img class="w3-image" src="assets/img/kfupm-mit.jpeg" alt="mit-kfupm" style="width: 100%;height: auto">-->
+            <!--</div>-->
+            <!--<div class="w3-col m7 l7" style="padding-left:1%; padding-right:1%">-->
+                <!--<p style="text-align: justify">-->
+                <!--Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto.-->
+                <!--Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto.-->
+                <!--</p>-->
+            <!--</div>-->
 
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="w3-container w3-center" style="padding-top: 40pt; padding-bottom:20pt">-->
+        <!--<div class="line"></div>-->
+        <!--<div style="display:inline-block;"><i class="fas fa-chevron-down fa-lg w3-myblue3"></i></div>-->
+        <!--<div class="line"></div>-->
+    <!--</div>-->
+    <!--<div class="w3-container">-->
+        <!--<div class="w3-row">-->
+            <!--<h3 style="padding-left:1%; padding-right:1%">Quadrotor</h3>-->
+            <!--<div class="w3-col m7 l7" style="padding-left:1%; padding-right:1%">-->
+                <!--<p style="text-align: justify">-->
+                <!--Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto.-->
+                <!--Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto.-->
+                <!--</p>-->
+            <!--</div>-->
+            <!--<div class="w3-col m5 l5 w3-center" style="padding-left:1%; padding-right:1%">-->
+                <!--<img class="w3-image" src="assets/img/kfupm-mit.jpeg" alt="mit-kfupm" style="width: 100%;height: auto">-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="w3-container w3-center" style="padding-top: 40pt; padding-bottom:20pt">-->
+        <!--<div class="line"></div>-->
+        <!--<div style="display:inline-block;"><i class="fas fa-chevron-down fa-lg w3-myblue3"></i></div>-->
+        <!--<div class="line"></div>-->
+    <!--</div>-->
+    <!--<div class="w3-container">-->
+        <!--<div class="w3-row">-->
+            <!--<h3 style="padding-left:1%; padding-right:1%">USAD</h3>-->
+            <!--<div class="w3-col m5 l5 w3-center" style="padding-left:1%; padding-right:1%">-->
+                <!--<img class="w3-image" src="assets/img/kfupm-mit.jpeg" alt="mit-kfupm" style="width: 100%;height: auto">-->
+            <!--</div>-->
+            <!--<div class="w3-col m7 l7" style="padding-left:1%; padding-right:1%">-->
+                <!--<p style="text-align: justify">-->
+                <!--Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto.-->
+                <!--Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto.-->
+                <!--</p>-->
+            <!--</div>-->
+
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="w3-container w3-center" style="padding-top: 40pt; padding-bottom:20pt">-->
+        <!--<div class="line"></div>-->
+        <!--<div style="display:inline-block;"><i class="fas fa-chevron-down fa-lg w3-myblue3"></i></div>-->
+        <!--<div class="line"></div>-->
+    <!--</div>-->
+    <!--<div class="w3-container">-->
+        <!--<div class="w3-row">-->
+            <!--<h3 style="padding-left:1%; padding-right:1%">MIT-KFUPM</h3>-->
+            <!--<div class="w3-col m7 l7" style="padding-left:1%; padding-right:1%">-->
+                <!--<p style="text-align: justify">-->
+                <!--Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto.-->
+                <!--Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto.-->
+                <!--</p>-->
+            <!--</div>-->
+            <!--<div class="w3-col m5 l5 w3-center" style="padding-left:1%; padding-right:1%">-->
+                <!--<img class="w3-image" src="assets/img/kfupm-mit.jpeg" alt="mit-kfupm" style="width: 100%;height: auto">-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="w3-container w3-center" style="padding-top: 40pt; padding-bottom:20pt">-->
+        <!--<div class="line"></div>-->
+        <!--<div style="display:inline-block;"><i class="fas fa-chevron-down fa-lg w3-myblue3"></i></div>-->
+        <!--<div class="line"></div>-->
+    <!--</div>-->
+    <!--<div class="w3-container">-->
+        <!--<div class="w3-row">-->
+            <!--<h3 style="padding-left:1%; padding-right:1%">Tomography</h3>-->
+            <!--<div class="w3-col m5 l5 w3-center" style="padding-left:1%; padding-right:1%">-->
+                <!--<img class="w3-image" src="assets/img/kfupm-mit.jpeg" alt="mit-kfupm" style="width: 100%;height: auto">-->
+            <!--</div>-->
+            <!--<div class="w3-col m7 l7" style="padding-left:1%; padding-right:1%">-->
+                <!--<p style="text-align: justify">-->
+                <!--Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto.-->
+                <!--Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto.-->
+                <!--</p>-->
+            <!--</div>-->
+
+        <!--</div>-->
+    <!--</div>-->
 <!--</div>-->
+
 <!--&lt;!&ndash;<div class="w3-bottom">&ndash;&gt;-->
+<!--<div class="w3-bottom">-->
 <!--<div class="w3-container" style="opacity:0">-->
-  <!--<p>This is my transparent footer</p>-->
+<!--<p>This is my transparent footer</p>-->
 <!--</div>-->
-<!--<div class="footer">-->
-    <!--<div class="w3-row w3-theme-myblack w3-bottom" style="position: absolute">-->
-        <!--<div class="w3-container">-->
-            <!--<div class="w3-col w3-half">-->
-                <!--<p style="text-align: center">-->
-                    <!--<strong>Contact</strong><br>-->
-                    <!--<a href="https://www.linkedin.com/in/ariefbarkahkoesdwiady/"><i class="w3-hover-myblue4 fab fa-linkedin fa-2x" style="margin-right:15px; margin-left:12px"></i></a>-->
-                    <!--<a href="https://www.facebook.com/abekatech"><i class="w3-hover-myblue4 fab fa-facebook-square fa-2x" style="margin-right:15px"></i></a>-->
-                    <!--<a href="https://www.instagram.com/ariefbarkah/"><i class="w3-hover-myblue4 fab fa-instagram fa-2x" style="margin-right:15px"></i></a>-->
-                    <!--<a href="mailto:arief.koesdwiady@gm.com?Subject=From%20the%20website"><i class="w3-hover-myblue4 fas fa-envelope-square fa-2x" style="margin-right:15px"></i></a>-->
-                <!--</p>-->
-            <!--</div>-->
-            <!--<div class="w3-col w3-half">-->
-                <!--<p style="text-align: center">-->
-                    <!--<img alt="copyright" src="assets/img/copyright.png" style="width: 5%; margin-right:5px;">-->
-                    <!--Copyright 2019 Arief<br>-->
-                    <!--<a class="w3-tiny w3-hover-myblue4" href="https://www.w3schools.com/w3css/default.asp" style="text-decoration: none" target="_blank">-->
-                        <!--Powered by w3.css</a>-->
-                <!--</p>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</div>-->
-<!--&lt;!&ndash;<footer id="myFooter">&ndash;&gt;-->
-<!--&lt;!&ndash;&ndash;&gt;-->
-<!--&lt;!&ndash;</footer>&ndash;&gt;-->
-<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<div class="footer">
+    <div class="w3-row w3-theme-whiteonblue w3-bottom" style="position: absolute">
+        <div class="w3-container">
+            <div class="w3-col w3-half">
+                <p style="text-align: center">
+                    <strong>Contact</strong><br>
+                    <a href="https://www.linkedin.com/in/ariefbarkahkoesdwiady/"><i class="fab fa-linkedin fa-2x"
+                                                                                    style="margin-right:15px; margin-left:12px"></i></a>
+                    <a href="https://www.facebook.com/abekatech"><i class="fab fa-facebook-square fa-2x"
+                                                                    style="margin-right:15px"></i></a>
+                    <a href="https://www.instagram.com/ariefbarkah/"><i class="fab fa-instagram fa-2x"
+                                                                        style="margin-right:15px"></i></a>
+                    <a href="mailto:arief.koesdwiady@gm.com?Subject=From%20the%20website"><i
+                            class="fas fa-envelope-square fa-2x" style="margin-right:15px"></i></a>
+                </p>
+            </div>
+            <div class="w3-col w3-half">
+                <p style="text-align: center">
+                    <img alt="copyright" src="assets/img/copyright.png" style="width: 5%; margin-right:5px;">
+                    Copyright 2019 Arief<br>
+                    <a class="w3-tiny" href="https://www.w3schools.com/w3css/default.asp"
+                       style="text-decoration: none"
+                       target="_blank">
+                        Powered by w3.css</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--<footer id="myFooter">-->
 
-<!--<script src="assets/js/arief.js"></script>-->
-
-<!--</body>-->
-<!--</html>-->
+<script src="assets/js/arief.js"></script>
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>-->
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+</body>
